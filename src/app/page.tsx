@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {supabase} from "./lib/supabase";
+import { redirect } from "next/navigation";
 
 export default function Home() {
 
@@ -16,5 +17,6 @@ export default function Home() {
 
   setNewView();
 
+  redirect('/login');
   return <div>hello</div>
 }
